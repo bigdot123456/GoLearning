@@ -1,0 +1,10 @@
+var http = require('http');
+ 
+var server = http.createServer(function (req, res) {
+    console.log("server.js only!")
+    res.writeHead(200, { "Content-Type": "text/plain" })
+    res.end("Hollo world\n URIsaok base KSC \n{v12.02.13}");
+});
+ 
+server.listen(process.env.PORT || 8001);
+
